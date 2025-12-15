@@ -1,0 +1,7 @@
+{
+    "EVAL_MODEL_NAME": "MODEL_NAME",
+    "API_KEY": "API_KEY",
+    "BASE_URL": "URL",
+    "BASE_MODEL": "Qwen3-8B",
+    "EMD_MODEL": "ACGE_TEXT_EMBEDDING"
+}
