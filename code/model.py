@@ -23,11 +23,3 @@ def get_openai_api(prompt: str):
     response = client.chat.completions.create(**request_params)
     return response.choices[0].message.content,1
 
-def get_qwen_api(prompt: str):
-    pass
-
-if __name__ == "__main__":
-    prompt = "你好"
-    response = get_openai_api(prompt)
-    print(response)
-

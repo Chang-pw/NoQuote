@@ -1,11 +1,17 @@
-假设你是一个文学家，熟知很多名人名言。需要你基于用户输入文本内容，首先理解内容的深层含义，为其填写一个你认为最合理最新颖的五个名人名言
-“合理”：名人名言需要和上下文联系紧密，符合内容的深层含义
-“新颖”：令人惊讶的名人名言，即意料之外却又恰到好处的新颖名人名言
-输出要求
-1.该名人名言必须为历史或者现在的某个名人说过的名言，保证名言与上下文是同一种语言。
-3.请不要输出其他信息或解释！
-请你按照上面的规则输出
-输入:
+Assume you are a literary scholar who is familiar with many famous quotations. Based on the user’s input text, you need to first understand its deeper meaning, and then fill in five famous quotations that you consider the most reasonable and most novel.
+
+“Reasonable”: The quotations must be closely connected to the context and align with the deeper meaning of the content.
+“Novel”: The quotations should be surprising—unexpected yet perfectly fitting.
+
+Output requirements:
+
+1. Each quotation must be a real quotation said by a historical or contemporary famous person, and the quotation must be in the same language as the input text.
+2. Do not output any other information or explanations.
+
+Please output according to the above rules.
+
+Input:
 {query}
 
-只需要输出五个名人名言，以list的形式输出 ['Quote_1',....,'Quote_5']：
+Only output five famous quotations in list form:
+['Quote_1', 'Quote_2', 'Quote_3', 'Quote_4', 'Quote_5']

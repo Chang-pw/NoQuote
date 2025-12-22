@@ -1,24 +1,24 @@
-from qwen_response import get_qwen_response
+from model import get_openai_api
 import re
 from utils import convert_str_to_list
 
-with open("./data/prompt/context_zh.md","r",encoding='utf-8') as f:
-    label_prompt = f.read()
-with open("./data/prompt/context_summary.md","r",encoding='utf-8') as f:
-    summary_prompt = f.read()
-
 def context_summary(context,summary_context=''):
-    ## 第一步：总结
+    with open("./data/prompt/summary.md","r",encoding='utf-8') as f:
+        summary_prompt = f.read()
+
+    with open("./data/prompt/context.md","r",encoding='utf-8') as f:
+        context_prompt = f.read()
+
     if summary_context:
         summary_context = summary_context.strip()
     else:
         prompt_sm = summary_prompt+context
-        summary_context = get_qwen_response(prompt_sm)
+        summary_context = get_openai_api(prompt_sm)
 
-    ## 第二步：打标签
-    prompt_zh = label_prompt.format(context=context)
+    ## Step1: analysis and deep meaning extraction
+    prompt = context_prompt.format(context=context)
 
-    content = get_qwen_response(prompt_zh)
+    content = get_openai_api(prompt)
     DM_pattern = r'<DM>(.*?)</DM>'
     LB_pattern = r'<LB>(.*?)</LB>'
     try:

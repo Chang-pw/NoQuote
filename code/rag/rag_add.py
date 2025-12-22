@@ -1,12 +1,9 @@
-#给rag数据库增加数据
 from rag_module import MyVectorDBConnector,get_embeddings
 import json
-##运行
 vector=MyVectorDBConnector(path='./code/rag/model/quill_en',collection_name='quill_en')
 
 documents=[]
 metadata=[]
-#收集的1w多条quote
 directory='./data/quote/quotes_en_label_.json'
 with open(directory,'r',encoding='utf-8') as file:
     data=json.load(file)

@@ -42,12 +42,6 @@ Please set the config in ``config.json``. Since our method relies on GPT-4o as t
 
 ### Run the Retrieval Pipeline
 
-Signle GPU for test:
-
-```bash
-bash run_single_GPU.sh
-```
-
 8 GPUS Batch Inference + KVCache for deployment:
 
 ```bash

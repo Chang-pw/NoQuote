@@ -47,4 +47,3 @@ Please provide your output in a clear structure, refined language, and well-orga
 Now generate:
 
 
-
