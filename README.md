@@ -86,7 +86,7 @@ Set the config in `config.json`:
 bash run_GPUS.sh
 ```
 
-## Citation
+<!-- ## Citation
 
 If you find this work useful, please cite:
 
@@ -98,7 +98,7 @@ If you find this work useful, please cite:
       booktitle={Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (ACL 2026)},
       url={https://arxiv.org/abs/2602.22220},
 }
-```
+``` -->
 
 ## License
 

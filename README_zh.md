@@ -86,7 +86,7 @@ pip install -r requirements.txt
 bash run_GPUS.sh
 ```
 
-## 引用
+<!-- ## 引用
 
 如果您觉得本工作有帮助，请引用：
 
@@ -98,7 +98,7 @@ bash run_GPUS.sh
       booktitle={Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (ACL 2026)},
       url={https://arxiv.org/abs/2602.22220},
 }
-```
+``` -->
 
 ## 许可证
 
