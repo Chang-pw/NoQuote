@@ -8,7 +8,7 @@
 
 English | [中文](README_zh.md)
 
-Our work is accepted at **ACL 2026 Main Conference**.
+Our work is accepted at **ACL 2026 Main Conference Oral Presentation**.
 
 > **TL;DR:** We propose NovelQR for quotation recommendation to find quotes that are unexpected yet rational, combining deep-meaning retrieval with token-level novelty reranking to enhance aesthetic value in writing.
 
